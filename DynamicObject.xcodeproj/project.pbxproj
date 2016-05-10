@@ -10,6 +10,9 @@
 		F04EBE1A1CE2330500781514 /* DynamicObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F04EBE191CE2330500781514 /* DynamicObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F04EBE211CE2330500781514 /* DynamicObject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04EBE161CE2330500781514 /* DynamicObject.framework */; };
 		F04EBE261CE2330500781514 /* DynamicObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBE251CE2330500781514 /* DynamicObjectTests.m */; };
+		F04EBE321CE2332E00781514 /* DYNObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F04EBE301CE2332E00781514 /* DYNObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F04EBE331CE2332E00781514 /* DYNObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBE311CE2332E00781514 /* DYNObject.m */; };
+		F04EBE361CE23B0D00781514 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBE351CE23B0D00781514 /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,10 @@
 		F04EBE201CE2330500781514 /* DynamicObjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04EBE251CE2330500781514 /* DynamicObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicObjectTests.m; sourceTree = "<group>"; };
 		F04EBE271CE2330500781514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F04EBE301CE2332E00781514 /* DYNObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNObject.h; sourceTree = "<group>"; };
+		F04EBE311CE2332E00781514 /* DYNObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNObject.m; sourceTree = "<group>"; };
+		F04EBE341CE23B0D00781514 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		F04EBE351CE23B0D00781514 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				F04EBE191CE2330500781514 /* DynamicObject.h */,
+				F04EBE301CE2332E00781514 /* DYNObject.h */,
+				F04EBE311CE2332E00781514 /* DYNObject.m */,
 				F04EBE1B1CE2330500781514 /* Info.plist */,
 			);
 			path = DynamicObject;
@@ -80,6 +89,8 @@
 		F04EBE241CE2330500781514 /* DynamicObjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				F04EBE341CE23B0D00781514 /* TestObject.h */,
+				F04EBE351CE23B0D00781514 /* TestObject.m */,
 				F04EBE251CE2330500781514 /* DynamicObjectTests.m */,
 				F04EBE271CE2330500781514 /* Info.plist */,
 			);
@@ -94,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04EBE1A1CE2330500781514 /* DynamicObject.h in Headers */,
+				F04EBE321CE2332E00781514 /* DYNObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04EBE331CE2332E00781514 /* DYNObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04EBE361CE23B0D00781514 /* TestObject.m in Sources */,
 				F04EBE261CE2330500781514 /* DynamicObjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char DynamicObjectVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DynamicObject/PublicHeader.h>
 
+#import "DYNObject.h"
 

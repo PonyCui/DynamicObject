@@ -7,8 +7,19 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TestObject.h"
+
+@interface TestObject (XXX)
+
+@property (nonatomic, strong) NSString *addString;
+
+@property (nonatomic, weak) NSObject *weakObject;
+
+@end
 
 @interface DynamicObjectTests : XCTestCase
+
+@property (nonatomic, strong) TestObject *anObject;
 
 @end
 
@@ -16,24 +27,17 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.anObject = [[TestObject alloc] init];
+    self.anObject.weakObject = self;
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testGetterSetter {
+    self.anObject.addString = @"Testing";
+    XCTAssertEqual(self.anObject.addString, @"Testing");
 }
 
 @end
